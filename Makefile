@@ -1,5 +1,5 @@
 PKG_NAME := ujson
-URL = https://files.pythonhosted.org/packages/16/c4/79f3409bc710559015464e5f49b9879430d8f87498ecdc335899732e5377/ujson-1.35.tar.gz
+URL = https://files.pythonhosted.org/packages/53/2a/dc633a35e21e2d712f142cbb5c796e8364147d49aa3174cadfd08f6e9895/ujson-3.2.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
