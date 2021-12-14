@@ -4,7 +4,7 @@
 #
 Name     : ujson
 Version  : 4.3.0
-Release  : 23
+Release  : 24
 URL      : https://files.pythonhosted.org/packages/21/93/ba928551a83251be01f673755819f95a568cda0bfb9e0859be80086dce93/ujson-4.3.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/21/93/ba928551a83251be01f673755819f95a568cda0bfb9e0859be80086dce93/ujson-4.3.0.tar.gz
 Summary  : Ultra fast JSON encoder and decoder for Python
