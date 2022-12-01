@@ -1,5 +1,5 @@
 PKG_NAME := pypi-ujson
-URL = https://files.pythonhosted.org/packages/6e/4a/03ddad85a10dd52e209993a14afa0cb0dc5c348e4647329f1c53856ad9e6/ujson-5.5.0.tar.gz
+URL = https://files.pythonhosted.org/packages/45/48/466d672c53fcb93d64a2817e3a0306214103e3baba109821c88e1150c100/ujson-5.6.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
