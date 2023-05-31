@@ -5,7 +5,7 @@
 #
 Name     : pypi-ujson
 Version  : 5.7.0
-Release  : 44
+Release  : 45
 URL      : https://files.pythonhosted.org/packages/43/1a/b0a027144aa5c8f4ea654f4afdd634578b450807bb70b9f8bad00d6f6d3c/ujson-5.7.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/43/1a/b0a027144aa5c8f4ea654f4afdd634578b450807bb70b9f8bad00d6f6d3c/ujson-5.7.0.tar.gz
 Summary  : Ultra fast JSON encoder and decoder for Python
@@ -15,6 +15,8 @@ Requires: pypi-ujson-license = %{version}-%{release}
 Requires: pypi-ujson-python = %{version}-%{release}
 Requires: pypi-ujson-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+BuildRequires : pypi(setuptools)
+BuildRequires : pypi(setuptools_scm)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -68,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683048330
+export SOURCE_DATE_EPOCH=1685547339
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
