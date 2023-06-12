@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-ujson
-Version  : 5.7.0
-Release  : 45
-URL      : https://files.pythonhosted.org/packages/43/1a/b0a027144aa5c8f4ea654f4afdd634578b450807bb70b9f8bad00d6f6d3c/ujson-5.7.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/43/1a/b0a027144aa5c8f4ea654f4afdd634578b450807bb70b9f8bad00d6f6d3c/ujson-5.7.0.tar.gz
+Version  : 5.8.0
+Release  : 46
+URL      : https://files.pythonhosted.org/packages/15/16/ff0a051f9a6e122f07630ed1e9cbe0e0b769273e123673f0d2aa17fe3a36/ujson-5.8.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/15/16/ff0a051f9a6e122f07630ed1e9cbe0e0b769273e123673f0d2aa17fe3a36/ujson-5.8.0.tar.gz
 Summary  : Ultra fast JSON encoder and decoder for Python
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -59,10 +59,10 @@ python3 components for the pypi-ujson package.
 
 
 %prep
-%setup -q -n ujson-5.7.0
-cd %{_builddir}/ujson-5.7.0
+%setup -q -n ujson-5.8.0
+cd %{_builddir}/ujson-5.8.0
 pushd ..
-cp -a ujson-5.7.0 buildavx2
+cp -a ujson-5.8.0 buildavx2
 popd
 
 %build
@@ -70,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685547339
+export SOURCE_DATE_EPOCH=1686586118
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -95,7 +95,6 @@ popd
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-ujson
-cp %{_builddir}/ujson-%{version}/LICENSE.txt %{buildroot}/usr/share/package-licenses/pypi-ujson/0a8a0c4dd38dfac034078c7f3e0c16ff489d6646 || :
 cp %{_builddir}/ujson-%{version}/deps/double-conversion/COPYING %{buildroot}/usr/share/package-licenses/pypi-ujson/8d434c9c1704b544a8b0652efbc323380b67f9bc || :
 cp %{_builddir}/ujson-%{version}/deps/double-conversion/LICENSE %{buildroot}/usr/share/package-licenses/pypi-ujson/8d434c9c1704b544a8b0652efbc323380b67f9bc || :
 pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
@@ -117,7 +116,6 @@ popd
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/pypi-ujson/0a8a0c4dd38dfac034078c7f3e0c16ff489d6646
 /usr/share/package-licenses/pypi-ujson/8d434c9c1704b544a8b0652efbc323380b67f9bc
 
 %files python
