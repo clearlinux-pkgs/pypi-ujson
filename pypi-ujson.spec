@@ -7,7 +7,7 @@
 #
 Name     : pypi-ujson
 Version  : 5.9.0
-Release  : 48
+Release  : 49
 URL      : https://files.pythonhosted.org/packages/6e/54/6f2bdac7117e89a47de4511c9f01732a283457ab1bf856e1e51aa861619e/ujson-5.9.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/6e/54/6f2bdac7117e89a47de4511c9f01732a283457ab1bf856e1e51aa861619e/ujson-5.9.0.tar.gz
 Summary  : Ultra fast JSON encoder and decoder for Python
